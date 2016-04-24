@@ -1,0 +1,22 @@
+RewriteEngine On # Turn on the rewriting engine 
+RewriteRule ^$ index.php?p=home [NC,L]
+RewriteRule ^history$ index.php?p=history [NC,L]
+RewriteRule ^request$ index.php?p=request [NC,L]
+RewriteRule ^request-success$ index.php?p=request&status=success [NC,L]
+RewriteRule ^san-ver-ga$ index.php?p=ver-ga [NC,L]
+RewriteRule ^home$ index.php?p=home[NC,L]
+RewriteRule ^pengisian-bbm-spl$ index.php?p=bbm [NC,L]
+RewriteRule ^data-mobil$ index.php?p=mobil [NC,L]
+RewriteRule ^data-driver$ index.php?p=driver [NC,L]
+RewriteRule ^verifikasi-ga-sanpeko$ index.php?p=verifikasi-ga-san [NC,L]
+RewriteRule ^verifikasi-kapool-sanpeko$ index.php?p=verifikasi-ka-san [NC,L] 
+RewriteRule ^verifikasi-kapool-approved$ index.php?p=approved [NC,L]
+RewriteRule ^verifikasi-kapool-approved-(.*)$ index.php?p=approved&$id=$1 [NC,L]
+RewriteRule ^verifikasi-kapool-reject-(.*)$ index.php?p=reject&id=$1 [NC,L]
+RewriteRule ^verifikasi-kapool-reject$ index.php?p=reject [NC,L]
+RewriteRule ^verifikasi-ga-sanpeko$ index.php?p=verifikasi-ga-san [NC,L] 
+RewriteRule ^edit-(.*)$ index.php?p=edit&edit=$1 [NC,L]
+RewriteRule ^san-request-(.*)$ index.php?p=request&id=$1 [NC,L]
+
+
+
